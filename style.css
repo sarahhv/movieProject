@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: grid;
+    grid-template-areas:
+        '. title title title .'
+        '. . img . .'
+        '. . age . .'
+        'descr descr descr descr descr'
+        '. . rating . .'
+        'vid vid vid vid vid'
+        ;
+}
+
+header {
+    width: 100vw;
+    background-color: black;
+    color: ghostwhite;
+    padding: 2vh 0vw;
+    font-family: 'Bangers', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+li {
+    display: grid;
+    grid-template-areas:
+            'title title title title title'
+            '. img img img .'
+            '. age age age .'
+            'descr descr descr descr descr'
+            'rating rating rating . .'
+            'vid vid vid vid vid';
+    grid-template-columns: repeat(5, 19vw);
+    margin: 2vh 2.5vw;
+    grid-row-gap: 2vh;
+}
+
+h2  {
+    grid-area: title;
+    font-size: 1.8em;
+}
+
+img {
+    grid-area: img;
+    width: 100%;
+}
+
+.age {
+    grid-area: age;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.description {
+    grid-area: descr;
+}
+
+.rating {
+    grid-area: rating;
+    font-size: 0.9em;
+}
+
+iframe {
+    width: 100%;
+    grid-area: vid;
+    height: 40vh;
+}
+
+@media screen and (min-width: 640px) {
+    * {
+        max-width: 640px;
+        margin: auto;
+    }
+
+    body {
+        border: solid black 1px;
+    }
+
+    li {
+        grid-template-columns: repeat(5, 19%);
+        margin: 2vh 2.5%;
+    }
+}
