@@ -30,18 +30,18 @@ h1 {
 }
 
 li {
-    display: grid;
-    grid-template-areas:
-            'title title title title title'
-            '. img img img .'
-            '. age age age .'
-            'descr descr descr descr descr'
-            'rating rating rating . .'
-            'vid vid vid vid vid';
-    grid-template-columns: repeat(5, 19vw);
-    margin: 2vh 2.5vw;
-    grid-row-gap: 2vh;
-}
+     display: grid;
+     grid-template-areas:
+             'title title title title title'
+             '. img img img .'
+             '. age age age .'
+             'descr descr descr descr descr'
+             'rating rating rating . .'
+             'vid vid vid vid vid';
+     grid-template-columns: repeat(5, 19vw);
+     margin: 2vh 2.5vw;
+     grid-row-gap: 2vh;
+ }
 
 h2  {
     grid-area: title;

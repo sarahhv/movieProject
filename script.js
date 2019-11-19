@@ -1,10 +1,10 @@
 /* Her er id'et fra youtube traileren */
 var trailerVideo = {
-    "youtubeId":["z_WZxJpHzEE", "cvCktPUwkW0", "Wmm5SNcjLvo", "SDnYMbYB-nU" , "iVAgTiBrrDA", "fnaojlfdUbs"]
+    "youtubeId":["z_WZxJpHzEE", "cvCktPUwkW0", "Wmm5SNcjLvo", "SDnYMbYB-nU" , "fnaojlfdUbs", "iVAgTiBrrDA"]
 }
 
 /* Her er der udgangspunktet for alle URL'er, med min API nøgle */
-let url = "http://www.omdbapi.com/?apikey=7b92adf4&t=";
+let url = "https://www.omdbapi.com/?apikey=7b92adf4&t=";
 
 /* Herunder er der de titler, der skal søges på i OMDB */
 let movies = ["Lord of the rings: The fellowship of the ring", "Lord of the rings: The two towers", "Lord of the rings: The return of the king", "The Hobbit: An Unexpected Journey", "The Hobbit: The Desolation of Smaug", "The Hobbit: The Battle of the Five Armies"];
